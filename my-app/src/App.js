@@ -2,6 +2,8 @@ import './App.css';
 import './Navbar.css';
 import Navbar from './Navbar';
 
+import AppRouter from './AppRouter';
+
 function App() {
   return (
     <div className="App">
