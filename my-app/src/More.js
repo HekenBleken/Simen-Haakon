@@ -1,6 +1,6 @@
 import React from 'react';
 
-function More(props) {
+function More() {
     return (
         <div>
             More
