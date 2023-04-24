@@ -7,12 +7,18 @@ import AppRouter from './AppRouter';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <header className="App-header">
-        <p>
-          <code>Koding er artig :-D</code>
-        </p>
-      </header>
+<AppRouter />
+
+    <ul id='nav-list'>
+
+      <li><a href="http://localhost:3000/home"> Hjem </a></li>
+
+      <li><a href="http://localhost:3000/omoss"> Om oss </a></li>
+
+      <li><a href="http://localhost:3000/mer"> Mer </a></li>
+
+    </ul>
+
     </div>
   );
 }
