@@ -11,11 +11,11 @@ return (
 
         <Routes>
 
-            <Route path="/hjem" element={HomePage} />
+            <Route path="/hjem" element={<HomePage/>} />
         
-            <Route path="/omoss" element={AboutUs} />
+            <Route path="/omoss" element={<AboutUs/>} />
 
-            <Route path="mer" element={More} />
+            <Route path="mer" element={<More/>} />
 
         </Routes>
 

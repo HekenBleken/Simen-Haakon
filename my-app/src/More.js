@@ -3,7 +3,8 @@ import React from 'react';
 function More() {
     return (
         <div>
-            More
+            Mer
+            <p>Mer enn som så</p>
         </div>
     );
 }
