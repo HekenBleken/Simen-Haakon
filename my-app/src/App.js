@@ -1,23 +1,31 @@
 import './App.css';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import AppRouter from './AppRouter';
 
 function App() {
+
+  const [backendData, setBackEndData] = useState([{}]);
+
+  useEffect(() => {
+    fetch("/api")
+      .then(response => response.json())
+        .then(data => { setBackEndData(data) })
+  }, []);
+
   return (
     <div className="App">
+      <AppRouter />
 
-<AppRouter />
+      <ul id='nav-list'>
 
-    <ul id='nav-list'>
+        <li><a href="http://localhost:3000/home"> Home </a></li>
 
-      <li><a href="http://localhost:3000/hjem"> Hjem </a></li>
+        <li><a href="http://localhost:3000/omoss"> Om oss </a></li>
 
-      <li><a href="http://localhost:3000/omoss"> Om oss </a></li>
+        <li><a href="http://localhost:3000/mer"> Mer </a></li>
 
-      <li><a href="http://localhost:3000/mer"> Mer </a></li>
-
-    </ul>
+      </ul>
 
     </div>
   );
