@@ -2,9 +2,14 @@ import React from 'react';
 
 function More() {
     return (
+
         <div>
+
+        <h1 style={{color: "green"}}>            
             Mer
-            <p>Mer enn som så</p>
+        </h1>
+
+        <p> Det kommer mer! </p>
         </div>
     );
 }
